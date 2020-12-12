@@ -54,3 +54,6 @@ BOARD_IMS_CAMERA := true
 ### SYSTEM PROPS
 # Add device-specific ones
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
+### HIDL
+PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
