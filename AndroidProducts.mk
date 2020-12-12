@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Open Source Project
+# Copyright (C) 2017 The arrowOS Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_maple.mk
+    $(LOCAL_DIR)/arrow_maple.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_maple-user \
-    lineage_maple-userdebug \
-    lineage_maple-eng
+    arrow_maple-user \
+    arrow_maple-userdebug \
+    arrow_maple-eng

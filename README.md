@@ -4,19 +4,19 @@ Device configuration for Sony Xperia XZ Premium (maple)
 Description
 -----------
 
-This repository is for LineageOS 18.1 on Sony Xperia XZ Premium (maple).
+This repository is for ArrowOS 11 on Sony Xperia XZ Premium (maple).
 
-How to build LineageOS
+How to build ArrowOS
 ----------------------
 
 * Make a workspace:
 
-        mkdir -p ~/lineageos
-        cd ~/lineageos
+        mkdir -p ~/arrowos
+        cd ~/arrowos
 
 * Initialize the repo:
 
-        repo init -u git://github.com/LineageOS/android.git -b lineage-18.1
+        repo init -u git://github.com/ArrowOS/android_manifest.git -b arrow-11.0
 
 * Create a local manifest:
 
@@ -26,11 +26,11 @@ How to build LineageOS
         <manifest>
             <!-- SONY -->
             <project name="whatawurst/android_kernel_sony_msm8998" path="kernel/sony/msm8998" remote="github" revision="lineage-18.1" />
-            <project name="kgvarunkanth/android_device_sony_yoshino-common1" path="device/sony/yoshino-common" remote="github" revision="lineage-18.1" />
-            <project name="kgvarunkanth/android_device_sony_maple1" path="device/sony/maple" remote="github" revision="lineage-18.1" />
+            <project name="kgvarunkanth/android_device_sony_yoshino-common1" path="device/sony/yoshino-common" remote="github" revision="arrow-11.0" />
+            <project name="kgvarunkanth/android_device_sony_maple1" path="device/sony/maple" remote="github" revision="arrow-11.0" />
 
             <!-- Pinned blobs for maple -->
-            <project name="kgvarunkanth/android_vendor_sony_maple1" path="vendor/sony/maple" remote="github" revision="lineage-18.1" />
+            <project name="kgvarunkanth/proprietary_vendor_sony_maple" path="vendor/sony/maple" remote="github" revision="ten" />
         </manifest>
 
 * Sync the repo:
@@ -45,8 +45,8 @@ How to build LineageOS
 * Setup the environment
 
         source build/envsetup.sh
-        lunch lineage_maple-userdebug
+        lunch arrow_maple-userdebug
 
-* Build LineageOS
+* Build arrowOS
 
         make -j8 bacon
