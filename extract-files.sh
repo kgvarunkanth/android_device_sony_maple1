@@ -18,7 +18,7 @@
 
 set -e
 
-DEVICE=poplar
+DEVICE=maple
 VENDOR=sony
 
 # Load extract_utils and do some sanity checks
