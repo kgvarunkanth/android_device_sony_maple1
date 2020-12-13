@@ -57,3 +57,7 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
 ### HIDL
 PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := true
+
+### Build broken prebuilt elf files
+BUILD_BROKEN_PREBUILT_ELF_FILES := true
+
