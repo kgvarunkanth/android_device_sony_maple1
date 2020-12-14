@@ -22,6 +22,9 @@ DEVICE_PACKAGE_OVERLAYS += \
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(DEVICE_PATH)/overlay/packages/apps/CarrierConfig
 
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/ramdisk/fstab.maple:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.maple
+
 ifeq ($(WITH_TWRP),true)
 include $(DEVICE_PATH)/device/init.mk
 else # WITH_TWRP
