@@ -30,7 +30,7 @@ How to build LineageOS
             <project name="kgvarunkanth/android_device_sony_maple1" path="device/sony/maple" remote="github" revision="lineage-18.1" />
 
             <!-- Pinned blobs for maple -->
-            <project name="kgvarunkanth/android_vendor_sony_maple1" path="vendor/sony/maple" remote="github" revision="lineage-18.1" />
+            <project name="kgvarunkanth/proprietary_vendor_sony_maple" path="vendor/sony/maple" remote="github" revision="ten" />
         </manifest>
 
 * Sync the repo:
